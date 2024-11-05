@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "telescope/newsletter",
+	"title": "Formulaire de newsletter",
+	"description": "Block custom pour afficher un formulaire de newsletter",
+	"category": "text",
+	"editorScript": "telescope-newsletter", 
+	"editorStyle": "telescope-newsletter", 
+	"style": "telescope-newsletter-front", 
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "source": "html",
+            "selector": "h3",
+            "default": "Telescope, dans votre boîte mail."
+        },
+        "paragraph": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+        "buttonText": {
+            "type": "string",
+            "source": "text",
+            "selector": "span",
+            "default": "Je m'inscris"
+        }
+    }
+}

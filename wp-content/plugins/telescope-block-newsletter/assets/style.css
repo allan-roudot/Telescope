@@ -1,0 +1,57 @@
+.wp-block-telescope-newsletter {
+	max-width: 768px;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__title {
+	font-size: 1.875rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__text {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__form {
+	border: 2px solid #D4D4D8;
+	display: flex;
+	justify-content: space-between;
+	gap: 4px;
+	max-width: 400px;
+	border-radius: 48px;
+	padding: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1rem;
+	overflow: hidden;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__form .telescope-newsletter__field {
+	color: #71717A;
+  	padding: 8px 16px;
+	width: 100%;
+	border-radius: 48px;
+	border: 0;
+	font-size: 1rem;
+	line-height: 2;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__form .telescope-newsletter__button {
+	background-color: #1d4ed8;
+	color: #fff;
+	min-width: fit-content;
+	font-weight: 500;
+	border: 0;
+	font-size: 1rem;
+	border-radius: 48px;
+	padding: 10px 32px;
+	transition: .3s ease;
+	cursor: pointer;
+}
+
+.wp-block-telescope-newsletter .telescope-newsletter__form .telescope-newsletter__button:hover {
+	background-color: #b48e42
+}
