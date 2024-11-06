@@ -4,7 +4,7 @@ import { useEffect } from '@wordpress/element'; // Pour utiliser useEffect pour 
 import { registerBlockVariation } from '@wordpress/blocks';
 import Glide from '../assets/scripts/glide.min.js'; // Importation du script Glide.js
 
-// WIP : revoir structure editor, carrousel fonctionnel non nécessaire...
+// WIP : revoir structure editor, carrousel fonctionnel non nécessaire, du css suffirait et serait plus maintenable...
 
 // Enregistrement de la variation du bloc 'core/query' pour un carrousel dynamique
 registerBlockVariation('core/query', {
