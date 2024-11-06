@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin name: Telescope Block Newsletter
- * Description: Block custom pour afficher un formulaire de newsletter d'après la maquette. Pour quelque chose de fonctionnel, j'opterai pour Gravity Forms.
+ * Description: Bloc personnalisé pour afficher un formulaire de newsletter d'après la maquette. Pour quelque chose de fonctionnel, j'opterai pour Gravity Forms.
  * Version: 1.0
  * Requires at least: 6.5
  * Author: Allan Roudot
