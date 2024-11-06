@@ -6,16 +6,16 @@ import Glide from '../assets/scripts/glide.min.js'; // Importation du script Gli
 
 // WIP : revoir structure editor, carrousel fonctionnel non nécessaire, du css suffirait et serait plus maintenable...
 
-// Enregistrement de la variation du bloc 'core/query' pour un carrousel dynamique
+// Enregistrement de la variation du bloc 'core/query'
 registerBlockVariation('core/query', {
-    name: 'query-carousel',         // Nom de la variation
-    title: 'Posts Query Carousel',  // Titre affiché dans l'éditeur
-    icon: 'building',               // Icône pour la variation
-    description: 'Affiche un carrousel dynamique des derniers articles avec Glide.js',  // Description du bloc
-    isActive: (blockAttributes) => blockAttributes.namespace === 'query-carousel',      // Détermine si la variation est active
+    name: 'query-carousel',        
+    title: 'Posts Query Carousel',  
+    icon: 'building',    
+    description: 'Affiche un carrousel dynamique des derniers articles avec Glide.js',
+    isActive: (blockAttributes) => blockAttributes.namespace === 'query-carousel', 
     attributes: {
-        namespace: 'query-carousel',  // Attribut personnalisé pour identifier la variation
-        align: 'wide',  // Alignement large
+        namespace: 'query-carousel',  // Pour identifier la variation
+        align: 'wide',
         query: {
             postType: 'post',   // Type de contenu à récupérer (articles)
             perPage: 6,         // Limite à 6 articles par carrousel
@@ -112,7 +112,7 @@ registerBlockVariation('core/query', {
     ],
 });
 
-// Fonction HOC (Higher-Order Component) pour ajouter des attributs et classes personnalisés aux blocs
+// Fonction HOC pour ajouter des attributs et classes personnalisés aux blocs, partie à améliorer car le carrousel est dispensable dans l'éditeur. 
 const addGlideAttributes = createHigherOrderComponent((BlockListBlock) => {
     return (props) => {
         const { block } = props;  // Extraction du bloc actuel
@@ -175,8 +175,7 @@ const addGlideAttributes = createHigherOrderComponent((BlockListBlock) => {
                     {...props}
                     wrapperProps={{
                         ...props.wrapperProps,
-                        'data-glide-el': 'track',  // Ajout de l'attribut 'data-glide-el' pour la piste de Glide.js
-                    }}
+                        'data-glide-el': 'track', 
                 />
             );
         }
@@ -187,7 +186,7 @@ const addGlideAttributes = createHigherOrderComponent((BlockListBlock) => {
                     {...props}
                     wrapperProps={{
                         ...props.wrapperProps,
-                        'data-glide-dir': '<',  // Ajout de l'attribut 'data-glide-dir' pour la flèche gauche
+                        'data-glide-dir': '<', 
                     }}
                 />
             );
@@ -199,7 +198,7 @@ const addGlideAttributes = createHigherOrderComponent((BlockListBlock) => {
                     {...props}
                     wrapperProps={{
                         ...props.wrapperProps,
-                        'data-glide-dir': '>',  // Ajout de l'attribut 'data-glide-dir' pour la flèche droite
+                        'data-glide-dir': '>', 
                     }}
                 />
             );
